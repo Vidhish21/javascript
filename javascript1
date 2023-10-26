@@ -1,0 +1,60 @@
+var sum=0;
+function addThree(){
+    sum=sum+3;
+    return sum;
+}
+console.log(addThree());
+//Assignment with a returned value
+var changed=0;
+function change(num) {
+    return (num+5) / 3;
+}
+changed =change(10);
+console.log(change);
+//stand in line inline function and queue's functionality
+
+function nextInLine(arr, item) {
+    arr.push(item);
+    return arr.shift();
+}
+
+var testArr = [1,2,3,4,5];
+
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
+//boolean values
+function welBoolean() {
+    return false
+}
+function ourTrOrFa(isItTrue) {
+    if(isItTrue) {
+        // isitrue is variable
+        return "Yes, it is True";
+    }
+    return "No, it is False";
+    }
+    console.log(ourTrOrFa(false));
+    function trueOrFalse(wasThatTrue) {
+        
+        if(wasThatTrue) {
+        return "Yes, that was True";
+    }
+    return "No, that was False";
+    }
+   console.log(trueOrFalse(true));
+function testEqual(val){
+    if(val==12){
+        return "equal";
+    }
+    return "not equal";
+}
+console.log(testEqual(12));
+//comparison with strict quality operator
+function testStrict(val){
+    if(val===7){
+        return "equal";
+    }
+    return "not equal";
+}
+console.log(testStrict('v'));
